@@ -147,3 +147,12 @@ class Grid:
         elif direction == "right":
             self.addRight()
         pass
+
+    def terminate(self):
+        for i in range(self.n):
+            for j in range(self.n):
+                if self.grid[i][j] == 0:
+                    return False, "GameOver"
+                elif self.grid[i][j] == 2048:
+                    return True, "Win"
+        return True, "Running"
