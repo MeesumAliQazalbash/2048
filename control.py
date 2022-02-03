@@ -2,17 +2,16 @@ from grid import Grid
 
 
 class Control:
+
     def __init__(self, n):
         self.g = Grid(n)
-        print(
-            """
+        print("""
 Commands:
 Up [U or u]
 Down [D or d]
 Left [L or l]
 Right [R or r]
-        """
-        )
+        """)
 
     def getInput(self):
         self.g.show()

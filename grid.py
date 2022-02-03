@@ -2,6 +2,7 @@ import random
 
 
 class Grid:
+
     def __init__(self, n):
         """initialize object with a size of n by n matrix"""
         self.n = n
