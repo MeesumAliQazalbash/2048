@@ -10,6 +10,10 @@ public:
     int *g = new int[n * n];
 
 private:
+    const int n = 5;
+    std::vector<int> q;
+    bool terminate = false;
+
     void show();
     void up();
     void down();
@@ -18,7 +22,4 @@ private:
     void twitch();
     void shift(char);
     void initialize(int);
-    const int n = 5;
-    std::vector<int> q;
-    bool terminate = false;
 };
